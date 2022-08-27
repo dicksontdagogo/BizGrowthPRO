@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="reset.css"> -->
+    
+</head>
+<body>
+
+    
+    <header>
+
+        <!---- START OF NAVIGATION ---->
+
+        <nav>
+            <div class="navbar">
+                <div class="logo"><a href="/index.html">BizGrowth<span>pro</span></a></div>
+                <div class="menu-items">
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="#">resources</a></li>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">contact us</a></li>
+                    </ul>
+                    <div class="flex">
+                        <button class="flex" onclick="subFormToggle()">subscribe</button>
+                        <form id="subform">
+                            <input type="text" placeholder="Name" id="name" required>
+                            <input type="email" placeholder="Email" id="email" required>
+                            <button onsubmit="subFormClose()">Ok</button>
+                        </form>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </nav>
+
+        <!---- END OF NAVIGATION ---->
+
+        <!---- START OF HERO ---->
+
+        <div class="hero-items">
+            <div class="looped-quotes">
+                <blockquote>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, neque expedita! Rerum explicabo eum magnam similique magni distinctio impedit porro."</blockquote>
+                <blockquote>"Lipsum dolor sit amet consectetur adipisicing elit. Corrupti, neque expedita! Rerum explicabo eum magnam similique magni distinctio impedit porro."</blockquote>
+                <blockquote>"Dolor sit amet consectetur adipisicing elit. Corrupti, neque expedita! Rerum explicabo eum magnam similique magni distinctio impedit porro."</blockquote>
+            </div>
+            <div class="filter-form">
+                <button onclick="toggleForm()">find a solution for your business</button>
+                <form id="form">
+                    <input type="text" placeholder="Company/Business name" class="bizname" required>
+                    <input type="text" placeholder="Required solution" class="solution" required>
+                    <input type="email" placeholder="Company/Business Email" class="email" required>
+                    <button onsubmit="submitForm()">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <!---- END OF HERO ---->
+        
+    </header>
+
+
+        <!---- START OF MAIN ---->
+
+    <main>
+        <div class="main_container">
+            <div class="our-services">
+                <div class="main-title">
+                    <h2>how we help you grow your business</h2>
+                </div>
+                <div class="serv1">
+                    <div class="text">
+                        <div class="num">1</div>
+                        <h3>Lorem ipsum dolor</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aperiam inventore vel. Aliquam assumenda et illum eum? Nam ducimus iusto consequuntur molestiae ut voluptates tempora ipsum deserunt. Quam, rem. Placeat?</p>
+                        <div class="get-started-btn"><a href="#">Get Started</a></div>
+                    </div>                    
+                    <div class="serv1-img">
+                        <img class="vector" src="1.jpg">
+                    </div>
+                </div>
+                <div class="serv2">
+                    <div class="serv2-img">
+                        <img class="vector" src="2.jpg">
+                    </div>
+                    <div class="text">
+                        <div class="num">2</div>
+                        <h3>Lorem ipsum dolor</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aperiam inventore vel. Aliquam assumenda et illum eum? Nam ducimus iusto consequuntur molestiae ut voluptates tempora ipsum deserunt. Quam, rem. Placeat?</p>
+                        <div class="get-started-btn"><a href="#">Get Started</a></div>
+                    </div>
+                </div>
+                <div class="serv3">
+                    <div class="text">
+                        <div class="num">3</div>
+                        <h3>Lorem ipsum dolor</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aperiam inventore vel. Aliquam assumenda et illum eum? Nam ducimus iusto consequuntur molestiae ut voluptates tempora ipsum deserunt. Quam, rem. Placeat?</p>
+                        <div class="get-started-btn"><a href="#">Get Started</a></div>
+                    </div>                    <div class="serv3-img">
+                        <img class="vector" src="3.jpg">
+                    </div>
+                </div>
+                <div class="serv4">
+                    <div class="serv4-img">
+                        <img class="vector" src="4.jpg">
+                    </div>
+                    <div class="text">
+                        <div class="num">4</div>
+                        <h3>Lorem ipsum dolor</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aperiam inventore vel. Aliquam assumenda et illum eum? Nam ducimus iusto consequuntur molestiae ut voluptates tempora ipsum deserunt. Quam, rem. Placeat?</p>
+                        <div class="get-started-btn"><a href="#">Get Started</a></div>
+                    </div>                </div>
+                <div class="serv5">
+                    <div class="text">
+                        <div class="num">5</div>
+                        <h3>Lorem ipsum dolor</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aperiam inventore vel. Aliquam assumenda et illum eum? Nam ducimus iusto consequuntur molestiae ut voluptates tempora ipsum deserunt. Quam, rem. Placeat?</p>
+                        <div class="get-started-btn"><a href="#">Get Started</a></div>
+                    </div>                    <div class="serv5-img">
+                        <img class="vector" src="5.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="stats">
+            <h2>statistics</h2>
+            <div class="stats-image"></div>
+        </section>
+
+        <section class="team">
+            <h2>meet the team</h2>
+            <div class="the-team">
+                <div class="team-container">
+                    <div class="team-grid">
+                        <div class="image"></div>
+                        <div class="bio">
+                            <h3>Kenya Ya-East</h3>
+                            <h4>Digital Marketing Expert</h4>
+                            <h5>Lead Gen</h5>
+                            <div class="btn">VERIFIED BY BizGrowth<span>pro</span></div>
+                        </div>
+                        <div class="bio-card">
+                            <div class="exp">
+                                <h5>Years of Exp:</h5><p>12</p>
+                                <h5>Best for:</h5><p>Social Media Marketing</p>
+                            </div>
+                            <div class="work">
+                                <h5>Top Jobs:</h5><p>Warner Bros</p>
+                                <h5>Total Revenue:</h5><p>$17.23m</p>
+                            </div>
+                        </div>
+                        <div class="quote">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum harum sint officia exercitationem, labore quia doloremque saepe aut inventore dignissimos."</p>
+                        </div>
+                   </div>
+                    <div class="team-grid">
+                        <div class="image"></div>
+                        <div class="bio">
+                            <h3>Bank Welly</h3>
+                            <h4>Snr Marketing Expert</h4>
+                            <h5>Marketing and Automation</h5>
+                            <div class="btn">VERIFIED BY BizGrowth<span>pro</span></div>
+                        </div>
+                        <div class="bio-card">
+                            <div class="exp">
+                                <h5>Years of Exp:</h5><p>7</p>
+                                <h5>Best for:</h5><p>Marketing Automations</p>
+                            </div>
+                            <div class="work">
+                                <h5>Top Jobs:</h5><p>Google</p>
+                                <h5>Total Revenue:</h5><p>$7.1m</p>
+                            </div>
+                        </div>
+                        <div class="quote">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum harum sint officia exercitationem, labore quia doloremque saepe aut inventore dignissimos."</p>
+                        </div>
+                    </div>
+                    <div class="team-grid">
+                        <div class="image"></div>
+                        <div class="bio">
+                            <h3>Suge Daye</h3>
+                            <h4>Web Developer</h4>
+                            <h5>Programming</h5>
+                            <div class="btn">VERIFIED BY BizGrowth<span>pro</span></div>
+                        </div>
+                        <div class="bio-card">
+                            <div class="exp">
+                                <h5>Years of Exp:</h5>
+                                <p>9</p>
+                                <h5>Best for:</h5>
+                                <p>Web/Mobile Apps Interface</p>
+                            </div>
+                            <div class="work">
+                                <h5>Top Jobs:</h5>
+                                <p>Microsoft</p>
+                                <h5>Total Revenue:</h5>
+                                <p>$12m</p>
+                            </div>
+                        </div>
+                        <div class="quote">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum harum sint officia exercitationem, labore quia doloremque saepe aut inventore dignissimos."</p>
+                        </div>
+                    </div>
+                    <div class="team-grid">
+                        <div class="image"></div>
+                        <div class="bio">
+                            <h3>Sean LaCombs</h3>
+                            <h4>snr programmer</h4>
+                            <h5>Programming</h5>
+                            <div class="btn">VERIFIED BY BizGrowth<span>pro</span></div>
+                        </div>
+                        <div class="bio-card">
+                            <div class="exp">
+                                <h5>Years of Exp:</h5><p>12</p>
+                                <h5>Best for:</h5><p>WordPress Development</p>
+                            </div>
+                            <div class="work">
+                                <h5>Top Jobs:</h5><p>Elementor</p>
+                                <h5>Total Revenue:</h5><p>$15.8m</p>
+                            </div>
+                        </div>
+                        <div class="quote">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum harum sint officia exercitationem, labore quia doloremque saepe aut inventore dignissimos."</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="four-dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </section>
+        <div class="faq">
+            <h2>faq</h2>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, accusantium!</h4>
+            <div icons onclick="changeIcon(this)">
+                <img type="icon" class="icon" id="icon" src="plus.svg" onclick="clickIcon()">
+            </div>
+            <p para id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero cumque earum architecto culpa voluptatibus reprehenderit eligendi, consequatur numquam autem. Hic doloremque voluptates sunt velit assumenda consequatur! Nisi dolorum molestiae voluptates.</p>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, accusantium!</h4>
+            <div icons onclick="changeIcon(this)">
+                <img type="icon" class="icon" id="icon2" src="plus.svg" onclick="clickIcon2()">
+            </div>                
+            <p para id="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero cumque earum architecto culpa voluptatibus reprehenderit eligendi, consequatur numquam autem. Hic doloremque voluptates sunt velit assumenda consequatur! Nisi dolorum molestiae voluptates.</p>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, accusantium!</h4>
+            <div icons onclick="changeIcon(this)">
+                <img type="icon" class="icon" id="icon3" src="plus.svg" onclick="clickIcon3()">
+            </div>                
+            <p para id="para3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero cumque earum architecto culpa voluptatibus reprehenderit eligendi, consequatur numquam autem. Hic doloremque voluptates sunt velit assumenda consequatur! Nisi dolorum molestiae voluptates.</p>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, accusantium!</h4>
+            <div icons onclick="changeIcon(this)">
+                <img type="icon" class="icon" id="icon4" src="plus.svg" onclick="clickIcon4()">
+            </div>                
+            <p para id="para4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero cumque earum architecto culpa voluptatibus reprehenderit eligendi, consequatur numquam autem. Hic doloremque voluptates sunt velit assumenda consequatur! Nisi dolorum molestiae voluptates.</p>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, accusantium!</h4>
+            <div icons onclick="changeIcon(this)">
+                <img type="icon" class="icon" id="icon5" src="plus.svg" onclick="clickIcon5()">
+            </div>                
+            <p para id="para5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero cumque earum architecto culpa voluptatibus reprehenderit eligendi, consequatur numquam autem. Hic doloremque voluptates sunt velit assumenda consequatur! Nisi dolorum molestiae voluptates.</p>
+        </div>
+    </main>
+
+        <!---- END OF MAIN ---->
+
+        <!---- START OF FOOTER ---->
+
+    <footer>
+        <div class="footer">
+            <div class="menu1">
+                <div class="logo">bizGrowth<span>pro</span></div>
+                <ul>
+                    <li>
+                        <p>Lorem perferendis deleniti. Corrupti voluptatibus harum repudiandae labore velit?</p>
+                    </li>
+                    <li>
+                        social icons
+                    </li>
+                    <li>policy</li>
+                    
+                </ul>
+            </div><hr>
+            <div class="menu2">
+                <h4>company</h4>
+                <h3>about us</h3>
+                <h3>contact us</h3>
+                <h3>what we do</h3>
+            </div><hr>
+            <div class="menu3">
+                <h4>categories</h4>
+                <h3>productivity</h3>
+                <h3>sales</h3>
+                <h3>marketing</h3>
+            </div>
+        </div>
+        <div class="signature">
+            <h5>
+                A DevDickson Production. All rights reserved. Copyright &copy; 2022 BizGrowth<span>pro</span>
+            </h5>
+        </div>
+    </footer>
+
+        <!---- END OF FOOTER ---->
+
+    <script src="script.js"></script>
+</body>
+</html>
