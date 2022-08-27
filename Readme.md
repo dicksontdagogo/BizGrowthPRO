@@ -1,3 +1,5 @@
+Not yet optimized for mobile
+
 TEXT
 h1 = 
 h2 = 
